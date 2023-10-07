@@ -1,0 +1,14 @@
+{
+  "name": "frontend-7",
+  "version": "1.0.0",
+  "description": "Landing Page",
+  "main": "index.js",
+  "scripts": {
+    "start-npx": "npx tailwindcss -i ./css/style.css -o ./dist/output.css --watch"
+  },
+  "author": "Erick Ngechu",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-family: "Overpass", sans-serif;
+font-family: "Ubuntu", sans-serif; */
+@layer components {
+  img {
+    max-width: 100%;
+  }
+  body {
+    font-family: "Ubuntu" sans-serif;
+  }
+  .section-hero {
+    background-image: linear-gradient(
+        to bottom right,
+        hsla(13, 100%, 72%, 0.942),
+        hsla(356, 100%, 66%, 0.971)
+      ),
+      url(../images/bg-pattern-intro-mobile.svg);
+    /* background-size: auto; */
+    background-size: auto;
+    background-position: center;
+  }
+  .container {
+    /* background-color: green; */
+    /* height: 100%; */
+  }
+  .logo {
+    width: 5rem;
+  }
+  .hamburger {
+    height: 1rem;
+  }
+  .header-cont {
+    text-align: center;
+  }
+  .main-heading {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    display: block;
+    font-family: "Overpass", sans-serif;
+    font-weight: 700;
+  }
+  .header-text {
+    font-weight: 500;
+  }
+
+  /* Stlying the buttons */
+  .start-free,
+  .learn-more {
+    padding: 0.4rem 1rem;
+    background-color: #fff;
+    border-radius: 10rem;
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
