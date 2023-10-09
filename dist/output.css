@@ -648,6 +648,10 @@ body {
   height: 100vh;
 }
 
+.max-h-screen {
+  max-height: 100vh;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -680,22 +684,9 @@ body {
   justify-content: space-between;
 }
 
-.justify-items-center {
-  justify-items: center;
-}
-
-.bg-Very-dark-blue {
-  --tw-bg-opacity: 1;
-  background-color: hsl(208 49% 24% / var(--tw-bg-opacity));
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 .text-Grayish-blue {
