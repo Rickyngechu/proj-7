@@ -55,4 +55,39 @@ font-family: "Ubuntu", sans-serif; */
     text-decoration: none;
     font-weight: 700;
   }
+  .main-sub {
+    margin-bottom: 3rem;
+  }
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Styling the getting started section */
+  .section-getting {
+    margin-top: 12rem;
+    background-image: linear-gradient(
+      hsla(237, 18%, 21%, 0.524),
+      hsl(237, 23%, 32%)
+    );
+  }
+  .getting-started {
+    /* height: 5rem; */
+    background-image: url(../images/bg-pattern-circles.svg);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .mg {
+    transform: translateY(-10rem);
+  }
+  .get-content {
+    transform: translateY(-5rem);
+  }
+  .logo {
+    margin-inline: auto;
+  }
+  .footer-lk {
+    color: hsl(240, 2%, 79%);
+    font-weight: 400;
+  }
 }

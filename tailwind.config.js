@@ -26,6 +26,13 @@ module.exports = {
     fontFamily: {
       sans: ["Overpass", "Ubuntu", "sans-serif"],
     },
+    fontWeight: {
+      thin: 300,
+      semibold: 400,
+      bold: 500,
+      black: 600,
+      dark: 700,
+    },
   },
   plugins: [],
 };
