@@ -4,8 +4,11 @@ module.exports = {
   theme: {
     extend: {},
     screens: {
-      sm: "375px",
-      xl: "1440px",
+      tablet: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      laptop: "1024px",
+      // => @media (min-width: 1024px) { ... }
     },
     colors: {
       "Light-red": "hsl(356, 100%, 66%)",

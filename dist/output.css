@@ -534,22 +534,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 375px) {
-  .container {
-    max-width: 375px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-}
-
 img {
   max-width: 100%;
 }
@@ -568,11 +552,6 @@ body {
   /* background-size: auto; */
   background-size: auto;
   background-position: center;
-}
-
-.container {
-  /* background-color: green; */
-  /* height: 100%; */
 }
 
 .logo {
@@ -653,6 +632,32 @@ h2 {
   font-weight: 400;
 }
 
+.bg-image {
+  width: 50%;
+}
+
+/* @media screen and (min-width: 900px) {
+    .section-hero {
+      height: 80vh;
+    }
+    .cont {
+      height: 100%;
+      width: 90%;
+      max-width: 80rem;
+      background-color: rosybrown;
+    }
+  } */
+
+/* @media screen and (min-width: 900px) {
+    .section-hero {
+      height: 80vh;
+    }
+    .cont {
+      width: 90%;
+      max-width: 80rem;
+      background-color: rosybrown;
+    } */
+
 .relative {
   position: relative;
 }
@@ -695,32 +700,28 @@ h2 {
   display: flex;
 }
 
-.h-screen {
+.h-\[100vh\] {
   height: 100vh;
 }
 
-.max-h-screen {
-  max-height: 100vh;
-}
-
-.w-11\/12 {
-  width: 91.666667%;
+.h-screen {
+  height: 100vh;
 }
 
 .w-32 {
   width: 8rem;
 }
 
+.w-\[98\%\] {
+  width: 98%;
+}
+
 .w-full {
   width: 100%;
 }
 
-.max-w-lg {
-  max-width: 32rem;
-}
-
-.max-w-md {
-  max-width: 28rem;
+.max-w-\[90rem\] {
+  max-width: 90rem;
 }
 
 .flex-col {
@@ -735,20 +736,17 @@ h2 {
   justify-content: space-between;
 }
 
-.gap-5 {
-  gap: 1.25rem;
+.gap-7 {
+  gap: 1.75rem;
 }
 
 .gap-8 {
   gap: 2rem;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-7 {
-  gap: 1.75rem;
+.bg-Light-red {
+  --tw-bg-opacity: 1;
+  background-color: hsl(353 100% 62% / var(--tw-bg-opacity));
 }
 
 .bg-Verydark-black-blue {
@@ -756,14 +754,14 @@ h2 {
   background-color: hsl(240 10% 16% / var(--tw-bg-opacity));
 }
 
+.bg-Verydark-desaturated-blue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(237 23% 32% / var(--tw-bg-opacity));
+}
+
 .bg-White {
   --tw-bg-opacity: 1;
   background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
-}
-
-.bg-Light-red {
-  --tw-bg-opacity: 1;
-  background-color: hsl(353 100% 62% / var(--tw-bg-opacity));
 }
 
 .px-3 {
@@ -835,3 +833,27 @@ h2 {
 
 /* font-family: "Overpass", sans-serif;
 font-family: "Ubuntu", sans-serif; */
+
+@media (min-width: 640px) {
+  .tablet\:w-\[80\%\] {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .laptop\:flex {
+    display: flex;
+  }
+
+  .laptop\:h-\[80vh\] {
+    height: 80vh;
+  }
+
+  .laptop\:w-\[95\%\] {
+    width: 95%;
+  }
+
+  .laptop\:flex-row {
+    flex-direction: row;
+  }
+}

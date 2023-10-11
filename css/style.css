@@ -90,4 +90,28 @@ font-family: "Ubuntu", sans-serif; */
     color: hsl(240, 2%, 79%);
     font-weight: 400;
   }
+  .bg-image {
+    width: 50%;
+  }
+  /* @media screen and (min-width: 900px) {
+    .section-hero {
+      height: 80vh;
+    }
+    .cont {
+      height: 100%;
+      width: 90%;
+      max-width: 80rem;
+      background-color: rosybrown;
+    }
+  } */
+
+  /* @media screen and (min-width: 900px) {
+    .section-hero {
+      height: 80vh;
+    }
+    .cont {
+      width: 90%;
+      max-width: 80rem;
+      background-color: rosybrown;
+    } */
 }
