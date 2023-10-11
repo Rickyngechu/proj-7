@@ -34,32 +34,49 @@
   </head>
   <body>
     <section class="section-hero h-screen laptop:h-[80vh]">
-      <div class="cont max-w-[90rem] w-[98%] mx-auto bg-Light-red">
+      <div class="cont max-w-[90rem] w-[98%] mx-auto">
         <div
-          class="header tablet:w-[80%] flex flex-col py-8 mx-auto h-[100vh] laptop:h-[80vh] bg-Verydark-desaturated-blue laptop:w-[95%]"
+          class="header tablet:w-[80%] flex flex-col py-8 mx-auto h-[100vh] laptop:h-[80vh] laptop:w-[95%]"
         >
           <div class="nav-imgs flex justify-between items-center">
             <img src="images/logo.svg" alt="Logo" class="logo-1" />
 
+            <ul
+              class="ul-cont hidden laptop:flex w-full justify-between items-center"
+            >
+              <nav class="flex ml-10 items-center text-White font-dark">
+                <li class="mr-7">Product &downarrow;</li>
+                <li class="mr-7">Company &downarrow;</li>
+                <li class="mr-7">Connect &downarrow;</li>
+              </nav>
+              <div class="sub flex items-center font-dark">
+                <li class="mr-11 cursor-pointer text-White">Login</li>
+                <li
+                  class="signup px-4 py-2 bg-White rounded-3xl cursor-pointer hover:opacity-75"
+                >
+                  Signup
+                </li>
+              </div>
+            </ul>
             <img
               src="images/icon-hamburger.svg"
               alt="Hamburger"
-              class="hamburger"
+              class="hamburger laptop:hidden"
             />
           </div>
-          <div class="header-cont mt-auto mx-5">
-            <h1 class="main-heading mb-5 text-White">
+          <div class="header-cont mt-auto mx-5 laptop:mb-14">
+            <h1 class="main-heading mb-5 text-White text-5xl">
               A modern publishing platform
             </h1>
 
-            <p class="header-text text-Grayish-blue mb-7">
+            <p class="header-text text-Grayish-blue mb-7 text-lg">
               Grow your audience and build your online brand.
             </p>
 
             <div class="link mb-5 w-full">
-              <a href="#" class="start-free mr-5">Start for free</a>
+              <a href="#" class="start-free bg-White mr-5">Start for free</a>
 
-              <a href="#" class="learn-more">Learn More</a>
+              <a href="#" class="learn-more bg-White">Learn More</a>
             </div>
           </div>
         </div>
@@ -67,70 +84,77 @@
     </section>
 
     <div class="section-choose py-9">
-      <div class="cont max-w-[90rem] w-[98%] mx-auto text-center bg-Light-red">
-        <div
-          class="choose-cont tablet:w-[80%] laptop:w-[95%] mx-auto bg-Verydark-desaturated-blue"
-        >
-          <h2 class="main-sub text-Very-dark-blue font-black text-xl">
+      <div class="cont max-w-[90rem] w-[98%] mx-auto text-center">
+        <div class="choose-cont tablet:w-[80%] laptop:w-[95%] mx-auto">
+          <h2
+            class="main-sub text-Very-dark-blue font-black text-xl laptop:text-3xl"
+          >
             Designed for the future
           </h2>
           <div
-            class="grid-cont text-center flex flex-col laptop:flex-row gap-8"
+            class="grid-cont text-center flex flex-col laptop:flex-row gap-8 laptop:items-center"
           >
-            <img
-              srcset="
-                images/illustration-editor-mobile.svg   370w,
-                images/illustration-editor-desktop.svg 1024w
-              "
-              sizes="(max-width:370px)370px,1024px"
-              src="illustration-editor-mobile.svg"
-              alt="phones"
-              class="bg-image mobile"
-            />
-
-            <div class="item2">
-              <h2 class="sub-heading text-Very-dark-blue font-black text-xl">
-                Introducing an extensible editor
-              </h2>
-              <p class="choose-text text-base leading-5">
-                Blog features an exceedingly intuitive interface which lets you
-                focus on one thing:creating content.The editor supports
-                management of multiple blogs and allows ease manipulation of
-                embeds such as images,videos and Markdown.Extensibility with
-                plugins and themes provide easy ways to add functionality or
-                change the looks of a blog.
-              </p>
+            <div class="img-cont w-9/12 order-1 laptop:w-1/2">
+              <img
+                srcset="
+                  images/illustration-editor-mobile.svg   370w,
+                  images/illustration-editor-desktop.svg 1024w
+                "
+                sizes="(max-width:370px)370px,1024px"
+                src="illustration-editor-mobile.svg"
+                alt="phones"
+                class="bg-image mobile"
+              />
             </div>
+            <div class="item-all w-1/2 laptop:text-left">
+              <div class="item2 mb-9">
+                <h2
+                  class="sub-heading text-Very-dark-blue font-black text-xl laptop:text-3xl"
+                >
+                  Introducing an extensible editor
+                </h2>
+                <p class="choose-text text-base leading-5">
+                  Blog features an exceedingly intuitive interface which lets
+                  you focus on one thing:creating content.The editor supports
+                  management of multiple blogs and allows ease manipulation of
+                  embeds such as images,videos and Markdown.Extensibility with
+                  plugins and themes provide easy ways to add functionality or
+                  change the looks of a blog.
+                </p>
+              </div>
 
-            <div class="item-3">
-              <h2 class="text-Very-dark-blue font-black text-xl">
-                Robust content management
-              </h2>
-              <p class="choose-text text-base leading-5">
-                Flexible content management enables users to easily move through
-                posts.Increase the usability of your blog by adding customised
-                categories,sections,format or flow.With this
-                functionality,you're in full control.
-              </p>
+              <div class="item-3">
+                <h2
+                  class="text-Very-dark-blue font-black text-xl laptop:text-3xl"
+                >
+                  Robust content management
+                </h2>
+                <p class="choose-text text-base leading-5">
+                  Flexible content management enables users to easily move
+                  through posts.Increase the usability of your blog by adding
+                  customised categories,sections,format or flow.With this
+                  functionality,you're in full control.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <section class="section-getting relative">
-      <div class="cont max-w-[90rem] w-[98%] mx-auto bg-Light-red">
+    <section class="section-getting relative mt-48 laptop:mt-10">
+      <div class="cont max-w-[90rem] w-[98%] mx-auto">
         <div
-          class="getting-started text-center laptop:flex laptop:flex-row px-3 tablet:w-[80%] laptop:w-[95%] mx-auto bg-Verydark-black-blue"
+          class="getting-started text-center laptop:flex laptop:flex-row px-3 tablet:w-[80%] laptop:w-[95%] mx-auto laptop:items-center translate-y-0"
         >
-          <div class="mg">
+          <div class="mg laptop:w-1/2">
             <img
               src="images/illustration-phones.svg"
               alt="phones"
               class="img-phones"
             />
           </div>
-          <div class="get-content">
+          <div class="get-content laptop:w-1/2 laptop:text-left">
             <h3 class="main-sub text-4xl text-White font-black">
               State of the Art infrastrucuture
             </h3>
@@ -147,9 +171,9 @@
     </section>
 
     <section class="section-reasons bg-White py-10">
-      <div class="cont max-w-[90rem] w-[98%] mx-auto bg-Light-red">
+      <div class="cont max-w-[90rem] w-[98%] mx-auto">
         <div
-          class="reasons text-center px-3 flex flex-col laptop:flex-row gap-8 tablet:w-[80%] laptop:w-[95%] mx-auto bg-Verydark-black-blue"
+          class="reasons text-center px-3 flex flex-col laptop:flex-row gap-8 tablet:w-[80%] laptop:w-[95%] mx-auto laptop:items-center"
         >
           <img
             srcset="
@@ -159,42 +183,50 @@
             sizes="(max-width:370px)370px,1024px"
             src="illustration-laptop-mobile.svg "
             alt="phones"
-            class="bg-image laptop"
+            class="bg-image laptop w-1/2"
           />
 
-          <div class="item">
-            <h2 class="text-Very-dark-blue font-black text-xl">
-              Free,open,simple
-            </h2>
-            <p class="choose-text text-base leading-5">
-              Blogr is a free and open source application backed by a large
-              community of helpful developers.It supports features such as code
-              syntax highlighting
-            </p>
-          </div>
-          <div class="item">
-            <h2 class="text-Very-dark-blue font-black text-xl">
-              Robust content management
-            </h2>
-            <p class="choose-text text-base leading-5">
-              Flexible content management enables users to easily move through
-              posts.Increase the usability of your blog by adding customised
-              categories,sections,format or flow.With this functionality,you're
-              in full control.
-            </p>
+          <div class="item-all laptop:w-1/2 laptop:text-left">
+            <div class="item laptop:mb-9">
+              <h2
+                class="text-Very-dark-blue font-black text-xl laptop:text-3xl"
+              >
+                Free,open,simple
+              </h2>
+              <p class="choose-text text-base leading-5">
+                Blogr is a free and open source application backed by a large
+                community of helpful developers.It supports features such as
+                code syntax highlighting
+              </p>
+            </div>
+            <div class="item">
+              <h2
+                class="text-Very-dark-blue font-black text-xl laptop:text-3xl"
+              >
+                Robust content management
+              </h2>
+              <p class="choose-text text-base leading-5">
+                Flexible content management enables users to easily move through
+                posts.Increase the usability of your blog by adding customised
+                categories,sections,format or flow.With this
+                functionality,you're in full control.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <footer class="section-footer bg-Verydark-black-blue py-9">
-      <div class="cont max-w-[90rem] w-[98%] mx-auto bg-Light-red">
+      <div class="cont max-w-[90rem] w-[98%] mx-auto">
         <div
-          class="footer-cont flex flex-col laptop:flex-row gap-7 text-center tablet:w-[80%] laptop:w-[95%] mx-auto"
+          class="footer-cont flex flex-col laptop:flex-row gap-7 text-center tablet:w-[80%] laptop:w-[95%] mx-auto laptop:items-center laptop:justify-between"
         >
-          <img src="images/logo.svg" alt="Logo" class="logo w-32" />
+          <div class="footer-logo laptop:w-1/2">
+            <img src="images/logo.svg" alt="Logo" class="logo w-32" />
+          </div>
 
-          <ul class="product">
+          <ul class="product laptop:w-1/2">
             <li class="footer-head font-black text-White text-2xl mb-3">
               Overview
             </li>
@@ -204,7 +236,7 @@
             <li class="footer-lk">Integrations</li>
           </ul>
 
-          <ul class="company">
+          <ul class="company laptop:w-1/2">
             <li class="footer-head font-black text-White text-2xl mb-3">
               About
             </li>
@@ -213,7 +245,7 @@
             <li class="footer-lk">Careers</li>
           </ul>
 
-          <ul class="connect">
+          <ul class="connect laptop:w-1/2">
             <li class="footer-head font-black text-White text-2xl mb-3">
               Contact
             </li>

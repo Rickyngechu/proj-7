@@ -50,21 +50,29 @@ font-family: "Ubuntu", sans-serif; */
   .start-free,
   .learn-more {
     padding: 0.4rem 1rem;
-    background-color: #fff;
     border-radius: 10rem;
     text-decoration: none;
     font-weight: 700;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+  }
+  .learn-more:hover,
+  .start-free:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
   }
   .main-sub {
     margin-bottom: 3rem;
   }
   h2 {
     margin-bottom: 1.5rem;
+    background-color: #ffffff00;
   }
 
   /* Styling the getting started section */
   .section-getting {
-    margin-top: 12rem;
+    /* margin-top: 12rem; */
     background-image: linear-gradient(
       hsla(237, 18%, 21%, 0.524),
       hsl(237, 23%, 32%)
@@ -77,12 +85,7 @@ font-family: "Ubuntu", sans-serif; */
     background-size: contain;
     background-repeat: no-repeat;
   }
-  .mg {
-    transform: translateY(-10rem);
-  }
-  .get-content {
-    transform: translateY(-5rem);
-  }
+
   .logo {
     margin-inline: auto;
   }
@@ -90,28 +93,4 @@ font-family: "Ubuntu", sans-serif; */
     color: hsl(240, 2%, 79%);
     font-weight: 400;
   }
-  .bg-image {
-    width: 50%;
-  }
-  /* @media screen and (min-width: 900px) {
-    .section-hero {
-      height: 80vh;
-    }
-    .cont {
-      height: 100%;
-      width: 90%;
-      max-width: 80rem;
-      background-color: rosybrown;
-    }
-  } */
-
-  /* @media screen and (min-width: 900px) {
-    .section-hero {
-      height: 80vh;
-    }
-    .cont {
-      width: 90%;
-      max-width: 80rem;
-      background-color: rosybrown;
-    } */
 }
