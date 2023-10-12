@@ -34,7 +34,7 @@
   </head>
   <body>
     <section class="section-hero h-screen laptop:h-[80vh]">
-      <div class="cont max-w-[90rem] w-[98%] mx-auto">
+      <div class="cont max-w-[90rem] w-[90%] laptop:w-[98%] mx-auto">
         <div
           class="header tablet:w-[80%] flex flex-col py-8 mx-auto h-[100vh] laptop:h-[80vh] laptop:w-[95%]"
         >
@@ -44,10 +44,33 @@
             <ul
               class="ul-cont hidden laptop:flex w-full justify-between items-center"
             >
-              <nav class="flex ml-10 items-center text-White font-dark">
-                <li class="mr-7">Product &downarrow;</li>
-                <li class="mr-7">Company &downarrow;</li>
-                <li class="mr-7">Connect &downarrow;</li>
+              <nav
+                class="flex ml-10 items-center justify-between text-White font-dark w-80"
+              >
+                <li class="product-drp">
+                  Product &downarrow;
+                  <ul class="dropdown drp-1">
+                    <li>Coding</li>
+                    <li>Developing</li>
+                    <li>Softwares</li>
+                  </ul>
+                </li>
+                <li class="comp-drp">
+                  Company &downarrow;
+                  <ul class="dropdown drp-2">
+                    <li>Coding</li>
+                    <li>Developing</li>
+                    <li>Softwares</li>
+                  </ul>
+                </li>
+                <li class="connect-drp">
+                  Connect &downarrow;
+                  <ul class="dropdown drp-3">
+                    <li>Email</li>
+                    <li>Whastaap</li>
+                    <li>Twitter</li>
+                  </ul>
+                </li>
               </nav>
               <div class="sub flex items-center font-dark">
                 <li class="mr-11 cursor-pointer text-White">Login</li>
@@ -65,7 +88,7 @@
             />
           </div>
           <div class="header-cont mt-auto mx-5 laptop:mb-14">
-            <h1 class="main-heading mb-5 text-White text-5xl">
+            <h1 class="main-heading mb-5 text-White text-3xl laptop:text-5xl">
               A modern publishing platform
             </h1>
 
@@ -84,7 +107,9 @@
     </section>
 
     <div class="section-choose py-9">
-      <div class="cont max-w-[90rem] w-[98%] mx-auto text-center">
+      <div
+        class="cont max-w-[90rem] w-[90%] laptop:w-[98%] mx-auto text-center"
+      >
         <div class="choose-cont tablet:w-[80%] laptop:w-[95%] mx-auto">
           <h2
             class="main-sub text-Very-dark-blue font-black text-xl laptop:text-3xl"
@@ -94,7 +119,7 @@
           <div
             class="grid-cont text-center flex flex-col laptop:flex-row gap-8 laptop:items-center"
           >
-            <div class="img-cont w-9/12 order-1 laptop:w-1/2">
+            <div class="img-cont w-full laptop:order-1 laptop:w-1/2">
               <img
                 srcset="
                   images/illustration-editor-mobile.svg   370w,
@@ -106,7 +131,7 @@
                 class="bg-image mobile"
               />
             </div>
-            <div class="item-all w-1/2 laptop:text-left">
+            <div class="item-all w-full laptop:w-1/2 laptop:text-left">
               <div class="item2 mb-9">
                 <h2
                   class="sub-heading text-Very-dark-blue font-black text-xl laptop:text-3xl"
@@ -142,10 +167,10 @@
       </div>
     </div>
 
-    <section class="section-getting relative mt-48 laptop:mt-10">
-      <div class="cont max-w-[90rem] w-[98%] mx-auto">
+    <section class="section-getting relative mt-48 laptop:mt-40">
+      <div class="cont max-w-[90rem] w-[90%] laptop:w-[98%] mx-auto">
         <div
-          class="getting-started text-center laptop:flex laptop:flex-row px-3 tablet:w-[80%] laptop:w-[95%] mx-auto laptop:items-center translate-y-0"
+          class="getting-started text-center laptop:flex laptop:flex-row px-3 tablet:w-[80%] laptop:w-[95%] mx-auto laptop:items-center laptop:h-96"
         >
           <div class="mg laptop:w-1/2">
             <img
@@ -154,7 +179,9 @@
               class="img-phones"
             />
           </div>
-          <div class="get-content laptop:w-1/2 laptop:text-left">
+          <div
+            class="get-content laptop:w-1/2 laptop:text-left laptop:translate-y-0"
+          >
             <h3 class="main-sub text-4xl text-White font-black">
               State of the Art infrastrucuture
             </h3>
@@ -170,8 +197,8 @@
       </div>
     </section>
 
-    <section class="section-reasons bg-White py-10">
-      <div class="cont max-w-[90rem] w-[98%] mx-auto">
+    <section class="section-reasons bg-White py-10 laptop:my-10">
+      <div class="cont max-w-[90rem] w-[90%] laptop:w-[98%] mx-auto">
         <div
           class="reasons text-center px-3 flex flex-col laptop:flex-row gap-8 tablet:w-[80%] laptop:w-[95%] mx-auto laptop:items-center"
         >
@@ -183,11 +210,11 @@
             sizes="(max-width:370px)370px,1024px"
             src="illustration-laptop-mobile.svg "
             alt="phones"
-            class="bg-image laptop w-1/2"
+            class="bg-image laptop w-full laptop:w-1/2"
           />
 
           <div class="item-all laptop:w-1/2 laptop:text-left">
-            <div class="item laptop:mb-9">
+            <div class="item mb-5 laptop:mb-9">
               <h2
                 class="text-Very-dark-blue font-black text-xl laptop:text-3xl"
               >
@@ -218,7 +245,7 @@
     </section>
 
     <footer class="section-footer bg-Verydark-black-blue py-9">
-      <div class="cont max-w-[90rem] w-[98%] mx-auto">
+      <div class="cont max-w-[90rem] w-[90%] laptop:w-[98%] mx-auto">
         <div
           class="footer-cont flex flex-col laptop:flex-row gap-7 text-center tablet:w-[80%] laptop:w-[95%] mx-auto laptop:items-center laptop:justify-between"
         >
@@ -255,11 +282,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    <script src="js/script.js"></script>
+    <script src="js/smooth.js"></script>
   </body>
 </html>

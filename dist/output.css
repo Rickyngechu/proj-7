@@ -552,6 +552,7 @@ body {
   /* background-size: auto; */
   background-size: auto;
   background-position: center;
+  border-radius: 0% 0% 10% 14% / 10% 10% 0% 15%;
 }
 
 .logo {
@@ -578,6 +579,12 @@ body {
   font-weight: 500;
 }
 
+/* Styling the section getting started */
+
+.section-getting {
+  border-radius: 0% 10% 10% 12% / 10% 16% 0% 14%;
+}
+
 /* Stlying the buttons */
 
 .start-free,
@@ -588,13 +595,6 @@ body {
   font-weight: 700;
   border: 1px solid transparent;
   transition: all 0.2s;
-}
-
-.learn-more:hover,
-  .start-free:hover {
-  background-color: transparent;
-  border: 1px solid #fff;
-  color: #fff;
 }
 
 .main-sub {
@@ -624,6 +624,14 @@ h2 {
   background-repeat: no-repeat;
 }
 
+.mg {
+  transform: translateY(-9rem);
+}
+
+.get-content {
+  transform: translateY(-7rem);
+}
+
 .logo {
   margin-inline: auto;
 }
@@ -633,12 +641,72 @@ h2 {
   font-weight: 400;
 }
 
-.relative {
+/* Styling for the dropdown */
+
+.product-drp {
+}
+
+.comp-drp {
+}
+
+.connect-drp {
+}
+
+.product-drp,
+  .comp-drp,
+  .connect-drp {
   position: relative;
 }
 
-.order-1 {
-  order: 1;
+.dropdown {
+  position: absolute;
+  display: none;
+  background-color: #fff;
+  color: #000;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 8rem;
+  opacity: 0;
+}
+
+.product-drp:hover,
+  .comp-drp:hover,
+  .connect-drp:hover {
+  cursor: pointer;
+}
+
+.product-drp:hover .dropdown,
+  .comp-drp:hover .dropdown,
+  .connect-drp:hover .dropdown {
+  position: absolute;
+  top: 1.5rem;
+  left: -1.5rem;
+  display: block;
+  opacity: 1;
+}
+
+.dropdown li {
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.dropdown li:hover {
+  color: hsl(240, 10%, 16%);
+  cursor: pointer;
+  border-bottom: 1px solid #000;
+}
+
+@media screen and (min-width: 900px) {
+  .learn-more:hover,
+    .start-free:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+}
+
+.relative {
+  position: relative;
 }
 
 .mx-5 {
@@ -679,10 +747,6 @@ h2 {
   margin-right: 1.25rem;
 }
 
-.mr-7 {
-  margin-right: 1.75rem;
-}
-
 .mt-48 {
   margin-top: 12rem;
 }
@@ -711,20 +775,16 @@ h2 {
   height: 100vh;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-32 {
   width: 8rem;
 }
 
-.w-9\/12 {
-  width: 75%;
+.w-80 {
+  width: 20rem;
 }
 
-.w-\[98\%\] {
-  width: 98%;
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .w-full {
@@ -733,11 +793,6 @@ h2 {
 
 .max-w-\[90rem\] {
   max-width: 90rem;
-}
-
-.translate-y-0 {
-  --tw-translate-y: 0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -817,14 +872,14 @@ h2 {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-base {
@@ -832,18 +887,13 @@ h2 {
   line-height: 1.5rem;
 }
 
-.text-xl {
-  font-size: 1.25rem;
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.text-lg {
-  font-size: 1.125rem;
+.text-xl {
+  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -888,6 +938,15 @@ font-family: "Ubuntu", sans-serif; */
 }
 
 @media (min-width: 1024px) {
+  .laptop\:order-1 {
+    order: 1;
+  }
+
+  .laptop\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
   .laptop\:mb-14 {
     margin-bottom: 3.5rem;
   }
@@ -896,8 +955,8 @@ font-family: "Ubuntu", sans-serif; */
     margin-bottom: 2.25rem;
   }
 
-  .laptop\:mt-10 {
-    margin-top: 2.5rem;
+  .laptop\:mt-40 {
+    margin-top: 10rem;
   }
 
   .laptop\:flex {
@@ -906,6 +965,10 @@ font-family: "Ubuntu", sans-serif; */
 
   .laptop\:hidden {
     display: none;
+  }
+
+  .laptop\:h-96 {
+    height: 24rem;
   }
 
   .laptop\:h-\[80vh\] {
@@ -918,6 +981,15 @@ font-family: "Ubuntu", sans-serif; */
 
   .laptop\:w-\[95\%\] {
     width: 95%;
+  }
+
+  .laptop\:w-\[98\%\] {
+    width: 98%;
+  }
+
+  .laptop\:translate-y-0 {
+    --tw-translate-y: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .laptop\:flex-row {
@@ -939,5 +1011,10 @@ font-family: "Ubuntu", sans-serif; */
   .laptop\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .laptop\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
